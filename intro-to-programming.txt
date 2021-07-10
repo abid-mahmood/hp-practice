@@ -1,6 +1,7 @@
 Source Code:
  - C++, Javascript, JAVA, Erlang, R, Python, RoR, .NET, PHP (HLL)
  - Assembly Language (LLL)
+
 Object Code:
   - Compiled code
 
@@ -12,7 +13,7 @@ Languages:
 Language Translators:
  - Compiler
  - Assembler ()
-sdfgdfg jhsgfhjsd gfhjsdfgjhsd fgfdj dsgdfjhfjhdf ghjsdfg hsdjfgsjd
+
 Components:
 - CPU (Control Unit, Arithmetic Logic Unit) => gdfghjdfghh styufgsjh
 - HDD (Hard Disk Drive)
@@ -38,6 +39,8 @@ Data Types:
 - Character/Alphabets (a-Z, A-Z, $, %, *, &, #, @) (1B/char)
 - Alphanumerics (a-z, A-Z, 0-9) (8 Bytes)
 - Float (-Infinity - Infinity, -1, -9, 1-9, 0.1, 0.2, 1.2, 45.6) (6 Bytes)
+
+Data Structures
 
 1 bit = 4 nibbles
 1 Byte = 8 bits

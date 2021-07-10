@@ -6,6 +6,16 @@
 
 <head>
   <title>Fakebook</title>
+  <script>
+    function handleClick() {
+      ele = document.getElementById('user-input');
+      var userInput = ele.value;
+      var parsedInput = parseInt(userInput);
+      // Build table for the given input
+      console.log(typeof userInput)
+      console.log(typeof parsedInput);
+    }
+  </script>
 </head>
 
 <body>
@@ -24,6 +34,8 @@
       <div class="col-6">
         <h1>create a new account</h1>
         <h3>It's quick and easy</h3>
+
+        <input id='user-input' /><button onclick="handleClick()">Print Table</button>
         
         <form>
           <select name='example-options'>
