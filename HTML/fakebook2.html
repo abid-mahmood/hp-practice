@@ -18,18 +18,7 @@ I tried to make for parsedInput but it gives error of some syntax
 
 <head>
   <title>Fakebook</title>
-
-  <script>
-    function handleClick() {
-      ele = document.getElementById('user-input');
-      var userInput = ele.value;
-      var parsedInput = parseInt(userInput);
-
-      for (i = 1; i <= 10; i++) {
-        console.log('ele.value X' + i + '=' + (ele.value * i))
-      }
-    }
-  </script>
+  <script src='counter.js' type='application/js'></script>
 </head>
 
 <body>
@@ -39,7 +28,7 @@ I tried to make for parsedInput but it gives error of some syntax
       <div class="col-sm">3</div>
       <div class="col-sm">4</div>
       <div class="col-sm">
-        <input id='user-input' /><button onclick="handleClick()">Print Table</button>
+        <input id='user-input' /><button onclick="printTable()">Print Table</button>
       </div>
       <div class="col-sm">6</div>
     </div>
