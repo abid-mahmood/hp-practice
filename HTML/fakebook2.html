@@ -34,22 +34,25 @@ I tried to make for parsedInput but it gives error of some syntx
 
 <body>
   <div class="container-fluid">
-    <div class="row" id="header">
-      <div class="col">1</div>
-      <div class="col">2</div>
-      <div class="col">3</div>
-      <div class="col">4</div>
-      <div class="col">5</div>
-      <div class="col">6</div>
+    <div class="row pt-sm-3" id="header">
+      <div class="col-sm-2 offset-sm-2 website-name">fakebook</div>
+      <div class="col-sm">3</div>
+      <div class="col-sm">4</div>
+      <div class="col-sm">
+        <input id='user-input' /><button onclick="handleClick()">Print Table</button>
+      </div>
+      <div class="col-sm">6</div>
     </div>
 
-    <div class="row" id="section">
-      <div class="col-3"></div>
-      <div class="col-6">
-        <h1>create a new account</h1>
+    <div class="row pt-sm-3" id="section">
+      <div class="col-sm-4 offset-sm-4">
+        <h1>Create a new account</h1>
         <h3>It's quick and easy</h3>
+      </div>
+    </div>
 
-        <input id='user-input' /><button onclick="handleClick()">Print Table</button>
+    <div class="row justify-content-center" id="section">
+      <div class="col-sm-4 ">
 
         <form>
           <select name='example-options'>
@@ -58,18 +61,18 @@ I tried to make for parsedInput but it gives error of some syntx
             <option>3</option>
             <option>4</option>
           </select>
+
           <div class="row">
             <div class="col">
               <input class="form-control" placeholder="First name">
             </div>
+
             <div class="col">
               <input type="text" class="form-control" placeholder="Last name">
             </div>
           </div>
-        </form>
 
       </div>
-      <div class="col-3"></div>
     </div>
 
     <div class="row" id="language"></div>
