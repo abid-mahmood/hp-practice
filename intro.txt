@@ -1,6 +1,6 @@
 Contents:
   1. Statements, statement terminator (;)
-  2. Operators (Assignment, Logical, Arithmetic, boolean, Concatenation)
+  2. Operators (Assignment, Logical, comparison, ternary [(condition)? true statement: false statement], Arithmetic, boolean, Concatenation)
   3. Operands
   4. Precedence
   5. Variables, Constants

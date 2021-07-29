@@ -1,14 +1,14 @@
-Source Code:
- - C++, Javascript, JAVA, Erlang, R, Python, RoR, .NET, PHP (HLL)
- - Assembly Language (LLL)
-
-Object Code:
-  - Compiled code
-
 Languages:
  - High-level Language (Human)
  - Low-level Language (Close to computer understanding)
  - Machine Language (Computer)
+
+Source Code/source program (high level language instructions): 
+ - C++, Javascript, JAVA, Erlang, R, Python, RoR, .NET, PHP (HLL)
+ - Assembly Language (LLL)
+
+Object Code/binary code/object program/ Machine code (Machine language instructions):
+  - Compiled code
 
 Language Translators:
  - Compiler
@@ -35,10 +35,18 @@ var e = 12.0; 6
 100000
 
 Data Types:
-- Integer 0-9 (4 Bytes)
+- Integer 0-9 (4 Bytes) (no decimle values)
 - Character/Alphabets (a-Z, A-Z, $, %, *, &, #, @) (1B/char)
 - Alphanumerics (a-z, A-Z, 0-9) (8 Bytes)
-- Float (-Infinity - Infinity, -1, -9, 1-9, 0.1, 0.2, 1.2, 45.6) (6 Bytes)
+- Boolean (true or false)
+- Float (32 bits)/doubles (64) (-Infinity - Infinity, -1, -9, 1-9, 0.1, 0.2, 1.2, 45.6) (6 Bytes)
+
+Primitive Variables:
+- Integers (whole numbers +ve/-ve values)
+- Float (32 bits)/doubles (64 bits) 
+- Boolean (true or false) (useful in conditional statements)
+- string (letters/words/sentences)
+- Char (letters/characters)
 
 Data Structures
 
