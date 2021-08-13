@@ -15,7 +15,7 @@ Language Translators:
  - Assembler ()
 
 Components:
-- CPU (Control Unit, Arithmetic Logic Unit) => gdfghjdfghh styufgsjh
+- CPU (Control Unit, Arithmetic Logic Unit) 
 - HDD (Hard Disk Drive)
 - RAM (Random Access Memory (Read & Write memory)) => Volatile Memory
 
