@@ -1,7 +1,15 @@
 /**
  * IF
  * Syntax:
-      if (condition) {
+      if (condition && condition) {
+        // statements
+      }
+
+      if (condition || condition) {
+        // statements
+      }
+
+      if (!condition) {
         // statements
       }
 
