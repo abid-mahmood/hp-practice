@@ -148,3 +148,31 @@ i=2; true; j=1 true; print *; break
 i=1; true; j=1 true; print *; break;
 
 */
+
+
+/*
+  While loop (also known as conditional loop)
+  for (counter loop)
+
+  initialization
+  while(condition) {
+    // statements
+    increment/decrement
+  }
+
+  do..while
+  initialization
+
+  do {
+    // statements
+  } while(condition) {
+    // statements
+    increment/decrement
+  }
+*/
+
+var i = 0;
+do {
+  document.write('Printed 1st time..');
+  i++;
+} while(i <= 5);
