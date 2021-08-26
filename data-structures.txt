@@ -1,0 +1,52 @@
+Data Structures:
+- Read
+- Write
+- Update/Modify/Change
+- Delete
+
+- Traverse (accessing of each and every element)
+
+var a = 10;
+var b = 20;
+
+a = 50;
+
+
+CRUD operations (Create, Read, Update, Delete) => Data Manipulation
+Data Structures (types/techniques):
+
+- Array:
+  Set of contagious memory locations,
+  50 (0 - 49)
+  length of array = (0 - (length - 1))
+  Terms:
+  - Index
+  - Value
+  - Element = (index + value)
+  - Static Array (size allocated).
+  - Dynamic Array
+  - Search
+  - one-deimensional Array (1D Array)
+  - two-dimensional Array (2D Array)
+
+  Syntax:
+    Array
+  
+  Algorithms:
+  - BFS (Breadth First Search)
+  - DFS (Depth First Search)
+
+------------------------------------------------------------------------
+(BFS)
+(DFS)
+------
+---------
+-----
+---------------
+-----------------
+---------
+--------------------------
+-------------
+---------
+---------
+----------
