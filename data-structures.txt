@@ -5,7 +5,7 @@ Data Structures:
 - Delete
 
 - Traverse (accessing of each and every element)
-
+  
 var a = 10;
 var b = 20;
 
