@@ -1,0 +1,53 @@
+ARRAY:
+CRUD:
+- Read (access)
+- Write 
+- Update/modify
+- Delete
+
+arr = []
+arr[0] ==> read
+arr[0] = 1, arr.push(1) ==> Write
+arr[0] = 23, arr[0] = 50 ==> Update
+arr[0] = undefined, delete(arr[0]) ==> delete
+
+Applications:
+- Stack
+- Queue
+
+Algorithms:
+- Bubble sort, O(n^2) [6, 8, 20, 50, 70, 100, 500] ==> [5, 6, 8, 20, 50, 100, 500]
+- Insertion Sort, O(n , 1, n^2) [200, 40, 5000], Outbound [90]
+- Radix Sort, O()
+- QuickSort, O(n, n^2)
+- Merge Sort, O(nlogn) [30, 5, 80, 90] ==> [30, 5], [80, 90] => [30] [5], [80], [90] => [5, 30] [80, 90] => [5, 30, 80, 90] => [5, 20, 30, 80, 90]
+
+
+ALGORITHM:
+ - Time Complexity (Running-time)
+ - Space complexity (Inbound, Outbound)
+
+Time Complexity (Running-time):
+for (i=0; i<10; i++) {
+  arr[i].push(i); // insertion 
+}
+O(10), Omega(10), O(n)
+
+n = 10
+for(i=0; i<n; i++) {
+  for (j=0; j<n; j++) {
+    for (k=0; k<n; k++) {
+      arr[i].push(j)
+    }
+  }
+}
+O(n^3)
+
+Space complexity (Inbound, Outbound):
+- Inbound, Outbound:
+
+Inbound:
+* Do not need additional resources to complete the execution
+
+Outbound:
+* Which needs additional resources to complete the execution
