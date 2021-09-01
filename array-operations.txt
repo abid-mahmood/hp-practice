@@ -1,4 +1,4 @@
-ARRAY:
+ARRAY, Linked-List, Object:
 CRUD:
 - Read (access)
 - Write 
@@ -12,20 +12,41 @@ arr[0] = 23, arr[0] = 50 ==> Update
 arr[0] = undefined, delete(arr[0]) ==> delete
 
 Applications:
-- Stack
-- Queue
-
-Algorithms:
-- Bubble sort, O(n^2) [6, 8, 20, 50, 70, 100, 500] ==> [5, 6, 8, 20, 50, 100, 500]
-- Insertion Sort, O(n , 1, n^2) [200, 40, 5000], Outbound [90]
-- Radix Sort, O()
-- QuickSort, O(n, n^2)
-- Merge Sort, O(nlogn) [30, 5, 80, 90] ==> [30, 5], [80, 90] => [30] [5], [80], [90] => [5, 30] [80, 90] => [5, 30, 80, 90] => [5, 20, 30, 80, 90]
-
+- Stack (Push/Pop)
+- Queue(Enque/Deque)
 
 ALGORITHM:
  - Time Complexity (Running-time)
  - Space complexity (Inbound, Outbound)
+
+Algorithms (Sort):
+- Bubble sort, O(n^2) [6, 8, 20, 50, 70, 100, 500] ==> [5, 6, 8, 20, 50, 100, 500]
+- Insertion Sort, O(n , 1, n^2) [40, 90, 200, 5000], Outbound []
+- Radix Sort, O(nlogn, n^2, n, 1)
+- QuickSort, O(n, n^2) [Pivot Element] [5, 2, 1, 56, 90, 200]
+- Merge Sort, O(nlogn) [30, 5, 80, 90] ==> [30, 5], [80, 90] => [30] [5], [80], [90] => [5, 30] [80, 90] => [5, 30, 80, 90] => [5, 20, 30, 80, 90]
+
+Bubble Sort:
+
+[200, 50, 4, 2, 3, 100]
+
+for(i=0; i<n; i++) {
+  for (j=1; j<n; j++) {
+    if(a[i] < a[j]) {
+      temp = a[i]; // 50, a[i] == 50
+      a[i] = a[j] // a[i] == 100, a[j] == 100
+      a[j] = temp // a[i] == 100, a[j] == 50
+    }
+  }
+}
+
+for (i=0; i<n; i++) {
+  if (a[i] < a[i++]) {
+    temp = a[i];  // 50, a[i] == 50
+    a[i] = a[i++]  // a[i] == 100, a[j] == 100
+    a[i++] = temp  // a[i] == 100, a[j] == 50
+  }
+}
 
 Time Complexity (Running-time):
 for (i=0; i<10; i++) {
@@ -51,3 +72,40 @@ Inbound:
 
 Outbound:
 * Which needs additional resources to complete the execution
+
+
+STACK:
+ - LIFO (Last in first out), FILO (First in Last Out)
+
+Operations:
+ - Push
+ - Pop
+
+arr = []
+Push (LIFO, FILO)
+
+push(arr, 1), arr = [1]
+push(arr, 2), arr = [1, 2]
+push(arr, 3), arr = [1, 2, 3]
+push(arr, 4), arr = [1, 2, 3, 4]
+
+arr = [1, 2, 3, 4]
+0 - 3
+
+pop(arr) // 4, arr = [1, 2, 3]
+pop(arr) // 3, arr = [1, 2]
+pop(arr) // 2, arr = [1]
+
+Pop/Push (without record-keeping)
+Push/Push/Pop (with record-keeping)
+
+
+Push/Push/Pop (with record-keeping): (arr = [1000])
+push(arr, 5), arr = [1, 5] [1, undefined, undefined, unefined, 5, 6, .., n]
+pop(arr), arr = [1, 5, n] [1, undefined, undefined, unefined, 5, 6, .., n-1]
+pop(arr), arr = [1, 5, n, n-1] [1, undefined, undefined, unefined, 5, 6, .., n-2]
+push(arr, 1000), arr = [1, 5, n, n-n] [1, undefined, undefined, unefined, 5, 6, n-n, undefined, undefined, "stack overflow"]
+push(arr, 1000), arr = [1, 5, n, n-n] [1, undefined, undefined, unefined, 5, 6, n-n, undefined, 1000, "stack overflow"]
+push(arr, 1001), arr = [1, 5, n, n-n] [1, 2, 3, 4, 5, 6, { id: 2, name, age, gender }, n-n, 1001, 1000, "stack overflow"]
+push(arr, 1002), arr = [1, 5, n, n-n] [1, 2, 3, 4, 5, 6, n-n, 1001, 1000, "stack overflow"] // Cannot be inserted, all is populated
+push(arr, 1002), arr = [1002], soft drop = [1, 2, 3, 4, 5, 6, n-n, 1001, 1000, "stack overflow"]
